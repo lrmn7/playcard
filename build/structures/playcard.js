@@ -22,17 +22,17 @@ registerFontSafely("notoemoji-bold.ttf", "noto-emoji");
 registerFontSafely("notosans-kr-black.ttf", "noto-sans-kr");
 
 const SORE_BACKGROUNDS = [
-    "https://i.ibb.co.com/BK2xgrt4/sore-music-card.png",
-    "https://i.ibb.co.com/KpHmFFfq/sore-music-card-1.png",
-    "https://i.ibb.co.com/5xFvTVRR/sore-music-card-2.png",
-    "https://i.ibb.co.com/rKTyb6d1/sore-music-card-3.png",
-    "https://i.ibb.co.com/dXcgVwJ/sore-music-card-4.png",
-    "https://i.ibb.co.com/fVvk6gWN/sore-music-card-5.png",
-    "https://i.ibb.co.com/WvTrrxtn/sore-music-card-6.png"
+    "https://olays.vercel.app/playcard/sore/sore-music-card.png",
+    "https://olays.vercel.app/playcard/sore/sore-music-card-1.png",
+    "https://olays.vercel.app/playcard/sore/sore-music-card-2.png",
+    "https://olays.vercel.app/playcard/sore/sore-music-card-3.png",
+    "https://olays.vercel.app/playcard/sore/sore-music-card-4.png",
+    "https://olays.vercel.app/playcard/sore/sore-music-card-5.png",
+    "https://olays.vercel.app/playcard/sore/sore-music-card-6.png"
 ];
 
 const LISTUNE_BACKGROUNDS = [
-    "https://i.ibb.co.com/NnJ82V0s/listune-music-card.png"
+    "https://olays.vercel.app/playcard/listune/listune-music-card.png"
 ];
 
 class Playcard {
@@ -111,10 +111,10 @@ class Playcard {
 
         if (selectedTheme === 'sore' || selectedTheme === 'sorecard') {
             backgroundUrl = SORE_BACKGROUNDS[Math.floor(Math.random() * SORE_BACKGROUNDS.length)];
-            defaultThumbnail = 'https://i.ibb.co.com/MyW2pDvn/sore-logo.png';
+            defaultThumbnail = 'https://olays.vercel.app/playcard/sore/logo.png';
         } else if (selectedTheme === 'listune' || selectedTheme === 'listunecard') {
             backgroundUrl = LISTUNE_BACKGROUNDS[Math.floor(Math.random() * LISTUNE_BACKGROUNDS.length)];
-            defaultThumbnail = 'https://i.ibb.co.com/PZw2j7Fy/listune-logo.png';
+            defaultThumbnail = 'https://olays.vercel.app/playcard/listune/listune-logo.png';
         } else {
             throw new Error('Invalid theme parameter, must be "sore" | "listune"');
         }
